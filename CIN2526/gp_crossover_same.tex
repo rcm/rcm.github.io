@@ -1,0 +1,185 @@
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\begin{block}{Parent 1}
+\begin{center}
+\resizebox{0.8\textwidth}{!}{%
+\begin{tikzpicture}[
+  every node/.style = {shape=circle,
+    draw, align=center,
+    top color=white, bottom color=blue!20},
+  outro/.style  = { bottom color = yellow!20},
+  level 1/.style={sibling distance=12em},
+  level 2/.style={sibling distance=8em},
+  level 3/.style={sibling distance=8em},
+  level 4/.style={sibling distance=8em}]
+
+\node{$+$}
+child{
+ node[outro]{$*$}
+ child{
+  node[outro]{$a$}
+  }
+  child{
+  node[outro]{$b$}
+  }
+ }
+ child{
+ node{$-$}
+ child{
+  node{$*$}
+  child{
+   node{$2$}
+   }
+   child{
+   node{$a$}
+   }
+  }
+  child{
+  node{$b$}
+  }
+ }
+ ;
+\end{tikzpicture}
+}
+\end{center}
+\end{block}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+\begin{block}{Parent 2}
+\begin{center}
+\resizebox{0.8\textwidth}{!}{%
+\begin{tikzpicture}[
+  every node/.style = {shape=circle,
+    draw, align=center,
+    top color=white, bottom color=blue!20},
+  outro/.style  = { bottom color = yellow!20},
+  level 1/.style={sibling distance=12em},
+  level 2/.style={sibling distance=8em},
+  level 3/.style={sibling distance=8em},
+  level 4/.style={sibling distance=8em}]
+\node{$+$}
+child{
+ node{$*$}
+ child{
+  node{$a$}
+  }
+  child{
+  node{$b$}
+  }
+ }
+ child{
+ node[outro]{$-$}
+ child{
+  node[outro]{$*$}
+  child{
+   node[outro]{$2$}
+   }
+   child{
+   node[outro]{$a$}
+   }
+  }
+  child{
+  node[outro]{$b$}
+  }
+ }
+;
+\end{tikzpicture}
+}
+\end{center}
+\end{block}
+\end{column}
+\end{columns}
+
+
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\begin{block}{Child 1}
+\begin{center}
+\resizebox{0.8\textwidth}{!}{%
+\begin{tikzpicture}[
+  every node/.style = {shape=circle,
+    draw, align=center,
+    top color=white, bottom color=blue!20},
+  outro/.style  = { bottom color = yellow!20},
+  level 1/.style={sibling distance=12em},
+  level 2/.style={sibling distance=8em},
+  level 3/.style={sibling distance=8em},
+  level 4/.style={sibling distance=8em}]
+\node{$+$}
+child{
+ node[outro]{$-$}
+ child{
+  node[outro]{$*$}
+  child{
+   node[outro]{$2$}
+   }
+   child{
+   node[outro]{$a$}
+   }
+  }
+  child{
+  node[outro]{$b$}
+  }
+ }
+ child{
+ node{$-$}
+ child{
+  node{$*$}
+  child{
+   node{$2$}
+   }
+   child{
+   node{$a$}
+   }
+  }
+  child{
+  node{$b$}
+  }
+ }
+ ;
+\end{tikzpicture}
+}
+\end{center}
+\end{block}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+\begin{block}{Child 2}
+\begin{center}
+\resizebox{0.8\textwidth}{!}{%
+\begin{tikzpicture}[
+  every node/.style = {shape=circle,
+    draw, align=center,
+    top color=white, bottom color=blue!20},
+  outro/.style  = { bottom color = yellow!20},
+  level 1/.style={sibling distance=12em},
+  level 2/.style={sibling distance=8em},
+  level 3/.style={sibling distance=8em},
+  level 4/.style={sibling distance=8em}]
+\node{$+$}
+child{
+ node{$*$}
+ child{
+  node{$a$}
+  }
+  child{
+  node{$b$}
+  }
+ }
+ child{
+ node[outro]{$*$}
+ child{
+  node[outro]{$a$}
+  }
+  child{
+  node[outro]{$b$}
+  }
+ }
+;
+\end{tikzpicture}
+}
+\end{center}
+\end{block}
+\end{column}
+\end{columns}

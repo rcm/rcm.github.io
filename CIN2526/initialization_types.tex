@@ -1,0 +1,93 @@
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\begin{block}{Full}
+\begin{center}
+\resizebox{1\textwidth}{!}{%
+\begin{tikzpicture}[
+  every node/.style = {shape=circle,
+    draw, align=center,
+    top color=white, bottom color=blue!20},
+level 1/.style={sibling distance=14em},
+  level 2/.style={sibling distance=7em},
+  level 3/.style={sibling distance=4em},
+  level 4/.style={sibling distance=2em}]
+\node{$-$}
+child{
+ node{$*$}
+ child{
+  node{$/$}
+  child{
+   node{$Z$}
+   }
+   child{
+   node{$Y$}
+   }
+  }
+  child{
+  node{$*$}
+  child{
+   node{$Y$}
+   }
+   child{
+   node{$X$}
+   }
+  }
+ }
+ child{
+ node{$+$}
+ child{
+  node{$*$}
+  child{
+   node{$X$}
+   }
+   child{
+   node{$Y$}
+   }
+  }
+  child{
+  node{$-$}
+  child{
+   node{$Y$}
+   }
+   child{
+   node{$2$}
+   }
+  }
+ };
+\end{tikzpicture}
+}
+\end{center}
+\end{block}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+\begin{block}{Grow}
+\begin{center}
+\resizebox{0.8\textwidth}{!}{%
+\begin{tikzpicture}[
+  every node/.style = {shape=circle,
+    draw, align=center,
+    top color=white, bottom color=blue!20},
+  outro/.style  = { bottom color = yellow!20},
+  level 1/.style={sibling distance=12em},
+  level 2/.style={sibling distance=8em},
+  level 3/.style={sibling distance=8em},
+  level 4/.style={sibling distance=8em}]
+  \node {$-$}
+    child { node {$\times$}
+		child { node {$+$} 
+			child {node {$Z$} } child { node {$Y$} } }
+		child { node {$Z$} } }
+    child { node {$/$}
+		child { node {$\times$}
+			child { node {$X$} }
+			child { node {$/$} 
+				child { node {$Z$} } child { node {$Z$} } }  }
+                child { node {$Y$} } };
+\end{tikzpicture}
+}
+\end{center}
+\end{block}
+\end{column}
+\end{columns}
+
