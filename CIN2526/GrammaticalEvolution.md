@@ -328,15 +328,16 @@ Grammar recursion is handled by preprocessing; the grammar must specify how many
 
 # SGE Example
 
-    <expr>       <op> <fun>   <var>
-    [16 22 35]  [100] [39]    [7 6]
+    <expr>         <op>  <fun>   <var>
+    [16 22 35 43]  [100] [39]    [7 6]
 
     <expr> <op> <expr>         ( 16)
     <fun> (<expr>) <op> <expr> ( 22)
     Sin (<expr>) <op> <expr>   ( 39)
+    Sin (<var>) <op> <expr>    ( 35)
     Sin (X) <op> <expr>        (  7)
     Sin (X) + <expr>           (100)
-    Sin (X) + <var>            ( 35)
+    Sin (X) + <var>            ( 43)
     Sin (X) + X                (  6)
 
 # SGE Crossover
