@@ -162,7 +162,7 @@ Crowding
 
 # Evaluation
 - Based on dominance
-- Uses a _Pareto-rank_: number of individuals in the population that are dominated by this individuals
+- Uses a _Pareto-rank_: number of individuals in the population that are dominated by this individual
 - Ordering often uses a secondary fitness to have a total order
 - Evaluation is performed in _objective space_
 
@@ -170,7 +170,7 @@ Crowding
 # Non-dominated Sorting Genetic Algorithm (NSGA-II)
 
 Fast Non-Dominated Sorting
- : An efficient (O(MN²)) method for ranking the population based on dominance.
+ : An efficient $O(MN^2)$ method for ranking the population based on dominance.
 
 Crowding Distance
  : A mechanism to maintain diversity along the Pareto Front without extra parameters.
@@ -190,12 +190,12 @@ Elitism
 ![Image taken from \tiny SETNDS: A SET-Based Non-Dominated Sorting Algorithm for Multi-Objective Optimization Problems](nsga2.jpg){ width=200px }
 
 # Crowind distance
-- Used for solutions on the *same* front
+- Used for solutions on the *same* rank
 - Perimeter of the *cuboid* formed by its nearest neighbors on either side
 - Sum the distance from current solution to the nearest neighbors (e.g., $|f_1(i+1) - f_1(i-1)|$ ) on each objective
 - Prefer solutions with the largest crowding distance
 
-# NSGA-II
+# The NSGA-II Algorithm
 - Pareto store holds several layered fronts
 - First layer $F_1$ only holds non-dominated individuals
 - Individuals belonging to front $F_{i+1}$:
@@ -259,8 +259,8 @@ SPEA2 assigns fitness based on two properties derived from dominance:
 - It solves them **simultaneously** and **cooperatively**
 
 # Weight Vectors
-- The problem is broken down using a set of weight vectors (e.g., $\lambda_1, \lambda 2, \ldots, \lambda_N$)
-- Each vector represents a different trade-off preference (e.g. $0.1 \cdot f_1 + 0.9 \cdot f_2, 0.2 \cdot f_1 + 0.8 \cdot f_2, \ldots, 0.9 \cdot f_1 + 0.1 \cdot f_2$)
+- The problem is broken down using a set of weight vectors, $\lambda_1, \lambda_2, \ldots, \lambda_N$
+- Each vector represents a different trade-off preference (e.g. $\lambda_1 = 0.1 \cdot f_1 + 0.9 \cdot f_2, \lambda_2 = 0.2 \cdot f_1 + 0.8 \cdot f_2, \ldots, \lambda_N = 0.9 \cdot f_1 + 0.1 \cdot f_2$)
 - These vectors are typically spread uniformly to guide the search for an evenly distributed Pareto Front
 - Each vector $\lambda_i$ is used to create one single-objective subproblem $g_i$
 
@@ -349,7 +349,7 @@ Simplicity
 # Advantages of NSGA-III
 - Solves MaOPs: Specifically designed for problems with 4 or more objectives.
 - Maintains Diversity: Reference points effectively preserve diversity across the entire Pareto front.
-- Strong Selection: The niche-ing mechanism maintains selection pressure even when most solutions are non-dominated.
+- Strong Selection: The niching mechanism maintains selection pressure even when most solutions are non-dominated.
 - Flexible: A well-established and powerful tool for complex engineering and design problems.
 
 # Comparing Algorithms
