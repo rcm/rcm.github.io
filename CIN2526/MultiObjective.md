@@ -412,3 +412,9 @@ Spread
 ![](hv.png){ width=200px }
 ::::
 :::
+
+# Comparing Algorithms
+- Run each algorithm a large number of times ($\ge 30$)
+- Use non-parametric tests to compare the chosen metric (e.g., HV)
+    - Wilcoxon Rank-Sum Test or
+    - Mann-Whitney U Test
