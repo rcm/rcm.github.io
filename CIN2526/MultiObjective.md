@@ -351,3 +351,64 @@ Simplicity
 - Maintains Diversity: Reference points effectively preserve diversity across the entire Pareto front.
 - Strong Selection: The niche-ing mechanism maintains selection pressure even when most solutions are non-dominated.
 - Flexible: A well-established and powerful tool for complex engineering and design problems.
+
+# Comparing Algorithms
+
+Convergence
+ : how close is the generated front from the true pareto front?
+
+Diversity
+ : how well are the solutions spread across the front?
+
+Combined
+ : metrics that combine both convergence and diversity
+
+# Generational Distance (GD)
+- Evaluate the quality of a set of solutions
+- Compares how well they converge to the true Pareto front
+- Measures the average distance between each solution in the set and its closest solution in the true Pareto front
+
+
+# Computing the GD
+
+Calculate the distance
+ : For each point in the obtained solution set, calculate the Euclidean distance to every point in the reference Pareto set.
+
+Find the minimum
+ : For each point from the obtained set, identify the minimum distance to any point in the reference set.
+
+Average the minimums
+ : Average these minimum distances across all points in the obtained set. This provides the final GD value.
+
+Interpretation
+ : A lower GD value means the obtained solution set is closer to the true Pareto front, indicating better performance.
+
+# Variants and related metrics
+Inverted Generational Distance (IGD)
+ : A variant that uses a reference set from the true Pareto front and can be used to evaluate both convergence and diversity.
+
+Generational Distance Plus ($GD^{+}$)
+ : A variant that modifies the distance calculation to be more robust.
+
+Spacing
+ : Measures the standard deviation of the distances between consecutive solutions. A low value means solutions are evenly spaced.
+
+Hypervolume (HV)
+ : A different metric that measures the volume of the dominated space by the obtained solutions relative to a reference point, without needing a true Pareto set.
+
+Spread
+ : Another common metric that measures the spread or diversity of the obtained solutions along the Pareto front
+
+# Hypervolume (HV)
+::: columns
+:::: column
+- Most popular and powerful metric
+- Measures the volume of the objective space that is dominated by the found pareto front, relative to a reference point
+- Combines both convergence and diversity.
+- Does not require the true Pareto front.
+- A larger HV is better.
+::::
+:::: column
+![](hv.png){ width=200px }
+::::
+:::
