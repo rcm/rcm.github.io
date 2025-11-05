@@ -11,13 +11,15 @@ biblio-title: References
 pandoc -t beamer -H latex_preamble.tex -s --bibliography empower.bib --filter pandoc-citeproc EmpowerSearch.md  -o EmpowerSearch.tex
 )
 
-# Rationale behind Multi-Objective Optimization
+# Rationale behind Multi-Objective Optimization (MOO)
 - Real world problems may have several objectives
 - These are often contradictory:
 	- Accuracy in a machine learning task versus the complexity of the model
 	- Time needed to perform a given task versus its cost
 	- Performance versus fuel consumption and emission of polluants
+    - Time needed to travel, $CO_2$ spent, money spent
 - In non-trivial problems, it is not possible to satisfy all objectives at the same time
+- MOO tries to find a set of balanced, high-quality trade-offs among several conflicting goals
  
 # Multi-Objective Optimization
 \begin{align*}
@@ -47,10 +49,17 @@ pandoc -t beamer -H latex_preamble.tex -s --bibliography empower.bib --filter pa
 
 # Pareto approach
 - Provides many solutions at the same time
+- Avoid oversimplification
 - Solutions can have high quality in one of the objectives while having lower quality in others
-- Allows the DM to select any trade-off solution
+- It shows exactly what you gain and lose with each decision
+- Allows the DM to use his expertise for selecting the best trade-off for the current business need
 - Population holds solutions according to Pareto dominance
 
+# Advantages of the pareto approach
+- More realistic problem modeling
+- Empowers human decision-makers
+- Provides a *menu* of optimal choices
+- Reveals critical trade-offs and insights
 
 # Pareto Dominance
 Assuming minimization of all objectives
