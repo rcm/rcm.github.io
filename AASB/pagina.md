@@ -2,7 +2,7 @@
 author:
 - Departamento de Informática
 - Universidade do Minho
-- Ano letivo de 2021/2022
+- Ano letivo de 2025/2026
 theme: Copenhagen
 title: Algoritmos para Análise de Sequências Biológicas
 header-includes:
@@ -13,9 +13,6 @@ header-includes:
 googlepwd: 52t9ScspM9yFX65
 gitpwd: f5j4bpwkf6mfnf3
 ---
-
-# Projeto
-- [Enunciado](projeto.pdf)
 
 # Recursos
 - [Apresentação da UC](apres.pdf)
