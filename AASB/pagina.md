@@ -15,12 +15,20 @@ gitpwd: f5j4bpwkf6mfnf3
 ---
 
 # Programa
+1. Command line interface e REPL
+1. Conceitos iniciais de programação
+    1. Strings
+    1. Ranges
+    1. Instruções condicionais e ciclos
+1. Dogma central da biologia
+    1. Listas
+    1. Dicionários
 1. Alinhamentos globais e locais
-2. Blast
-3. Motifs (expressões regulares)
-4. Motifs Probabilísticos
-5. Análise Filogenética
-6. Alinhamentos múltiplos progressivos
+1. Blast
+1. Motifs (expressões regulares)
+1. Motifs Probabilísticos
+1. Análise Filogenética
+1. Alinhamentos múltiplos progressivos
 
 
 
