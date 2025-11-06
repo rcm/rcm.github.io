@@ -41,7 +41,7 @@ gitpwd: f5j4bpwkf6mfnf3
 - [Aula 4](ficha04.pdf)
 - [Alinhamentos parte II](progr_dinamica.pdf)
 - [Aula 5](ficha05.pdf)
-- [Blast](blast.pdf)
+- [Blast](Blast.pdf)
 - [Aula 6](ficha06.pdf)
 - [Motifs](motifs.pdf)
 - [Aula 7](ficha07.pdf)
