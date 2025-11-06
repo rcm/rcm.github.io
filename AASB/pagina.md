@@ -14,6 +14,16 @@ googlepwd: 52t9ScspM9yFX65
 gitpwd: f5j4bpwkf6mfnf3
 ---
 
+# Programa
+1. Alinhamentos globais e locais
+2. Blast
+3. Motifs (expressões regulares)
+4. Motifs Probabilísticos
+5. Análise Filogenética
+6. Alinhamentos múltiplos progressivos
+
+
+
 # Recursos
 - [Apresentação da UC](apres.pdf)
 - [Aula 1](ficha01.pdf)
