@@ -38,3 +38,4 @@ gitpwd: f5j4bpwkf6mfnf3
 - [Exemplos](https://docs.google.com/spreadsheets/d/1dgVdpbHF5JuIJCJbHd8oRaB9WlCTUM3RQIXxpj0ZKiM/edit?usp=sharing) de alinhamentos globais e locais
 - [Needleman Wunsch](NW.py)
 - [Blast](blast.zip)
+- [Regex 101](https://regex101.com/)
