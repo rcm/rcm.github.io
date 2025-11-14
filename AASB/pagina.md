@@ -14,9 +14,6 @@ googlepwd: 52t9ScspM9yFX65
 gitpwd: f5j4bpwkf6mfnf3
 ---
 
-# Projeto
-- [Enunciado](projeto.pdf)
-
 # Recursos
 - [Apresentação da UC](apres.pdf)
 - [Aula 1](ficha01.pdf)
@@ -39,3 +36,4 @@ gitpwd: f5j4bpwkf6mfnf3
 - [Needleman Wunsch](NW.py)
 - [Blast](blast.zip)
 - [Regex 101](https://regex101.com/)
+- [Aula de PWM](pwm.zip)
