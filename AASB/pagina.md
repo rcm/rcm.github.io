@@ -2,7 +2,7 @@
 author:
 - Departamento de Informática
 - Universidade do Minho
-- Ano letivo de 2021/2022
+- Ano letivo de 2025/2026
 theme: Copenhagen
 title: Algoritmos para Análise de Sequências Biológicas
 header-includes:
