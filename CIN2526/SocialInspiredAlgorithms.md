@@ -31,11 +31,11 @@ pandoc -t beamer -H latex_preamble.tex -s --bibliography biblio.bib --filter pan
 # Concepts
 - Optimization based on social interactions
 - Uses population of individuals
-- Most algorithms are using for real optimization
+- Most algorithms are used for real optimization
 - They borrow ideas from the behavior of living systems
 
 # Particle Swarm Optimization
-- Created in 1995 by James Kennedy and Russell Eberhart [@blum2008swarm]
+- Created in 1995 by James Kennedy and Russell Eberhart 
 - Inspired in social psychology and bird flock simulation
 - Uses a population of individuals
 - Each individual has a position and a velocity
@@ -457,7 +457,3 @@ Others
 - An ant finishes building the solution when it has covered the entire set $A$
 - Pruning may be performed _a posteriori_ by  removing superfluos sets
 - Best solutions may use local search
-
-# Links
-- Software: https://github.com/thieunguyen5991/metaheuristics
-
