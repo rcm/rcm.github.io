@@ -30,6 +30,7 @@ gitpwd: f5j4bpwkf6mfnf3
 - [Motifs Probabilísticos](motifs_probabilisticos.pdf)
 - [Análise Filogenética](analise_filogenetica.pdf)
 - [Aula 8](ficha08.pdf)
+- [Alinhamentos múltiplos](malign.pdf)
 
 # Recursos extra
 - [Exemplos](https://docs.google.com/spreadsheets/d/1dgVdpbHF5JuIJCJbHd8oRaB9WlCTUM3RQIXxpj0ZKiM/edit?usp=sharing) de alinhamentos globais e locais
