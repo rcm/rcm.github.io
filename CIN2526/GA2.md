@@ -302,12 +302,11 @@ U[x_1 - \alpha \cdot (x_2 - x_1), x_2 + \alpha \cdot (x_2 - x_1)]
 - Genetic operators must preserve these constraints
 
 # Why ordinary crossover fails
-
-## Permutations need special treatment
-
 - In a TSP-like chromosome, every city must appear **exactly once**.
 - Ordinary two-point crossover can duplicate symbols and omit others.
 - Such offspring are invalid tours.
+
+\hfill \newline
 
 \begin{columns}
 \begin{column}{0.48\textwidth}
@@ -321,6 +320,8 @@ U[x_1 - \alpha \cdot (x_2 - x_1), x_2 + \alpha \cdot (x_2 - x_1)]
 \texttt{4 2 5 6 1 8 3 7}
 \end{column}
 \end{columns}
+
+\hfill \newline
 
 If we blindly swap positions 4–6, we may get:
 
@@ -364,7 +365,7 @@ directly to the corresponding offspring
 - It uses that mapping to replace duplicate symbols outside the segment.
 - The result is always a valid permutation, assuming valid parent permutations.
 
-PMX was introduced by Goldberg and Lingle for order-based problems such as the traveling salesman problem. [1][3]
+PMX was introduced by Goldberg and Lingle for order-based problems such as the traveling salesman problem.
 
 # The PMX algorithm
 
@@ -377,7 +378,7 @@ Given two parent permutations $P_1$ and $P_2$:
 3. Build a mapping from the exchanged segments, position by position.
 4. Fill the remaining positions from the corresponding original parent, repairing conflicts through the mapping.
 
-The middle segment is preserved **positionally**; the rest is repaired using the mapping. [1][3]
+The middle segment is preserved **positionally**; the rest is repaired using the mapping.
 
 # The PMX algorithm
 ## Important convention
@@ -409,7 +410,7 @@ The selected middle segments are:
 - From $P_1$: $(2, 7, 1)$
 - From $P_2$: $(1, 6, 8)$
 
-This is the standard example used in descriptions of PMX. [3][10]
+This is the standard example used in descriptions of PMX.
 
 # Worked example
 ## Step 1: Exchange middle segments
@@ -766,7 +767,7 @@ PMX tends to preserve:
 - A mixture of material from both parents.
 - Feasibility of the permutation.
 
-It does **not** primarily preserve relative order across the whole chromosome; that is closer to Order Crossover (OX). [3][5]
+It does **not** primarily preserve relative order across the whole chromosome; that is closer to Order Crossover (OX).
 
 # Properties and pitfalls
 ## Common misunderstanding 1
