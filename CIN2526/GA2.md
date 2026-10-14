@@ -194,6 +194,25 @@ $\textcolor{blue}{10}\textcolor{red}{0}\textcolor{blue}{10}$
 	1. Apply genetic operators to the best 2 individuals
 	1. The offspring substitute the worst 2 individuals
 
+# Generational vs Steady State Scheme
+- Evolutionary pressure is stronger in generational GA
+- Steady state maintains the largest proportion of the population between iterations
+- It is important to maintain the NFEs constant when comparing both schemes
+
+# Evolutionary Pressure
+- A stronger evolutionary pressure usually means faster convergence
+- Faster convergence can be _detrimental_ because it can lead to _premature convergence_
+- Roulette Wheel has stronger evolutionary pressure than tournament selection
+- Steady state has less evolutionary pressure than the generational scheme
+- Larger mutation rates _may_ help problems stemming from high evolutionary pressure
+
+# Parameters
+- Number of function evaluations: NFEs should be kept __constant__ when comparing different approaches
+- Population size: The size of the population should always be seen in tandem with the _number of iterations_ ($\textrm{NFEs} = \textrm{Popsize} \times \textrm{MaxIt}$)
+- Number of iterations: Maxit
+- Probability of crossover: if there are crossover operators, $p_{cross}$ should be high ($\geq 80\%$)
+- Probability of mutation: $p_{mut}$ should be low because otherwise it is too disruptive and similar to random search; it is usually applied coordinate-wise and not individual-wise.
+
 # Representations
 * There can be several solution representations
 * Each representation has several advantages and disadvantages
@@ -887,3 +906,4 @@ That chain is the essence of PMX.
 \begin{center}
 2 \textcolor{blue}{1 7 5 3 6} 4 $\rightarrow$ 2 \textcolor{blue}{7 3 6 5 1} 4
 \end{center}
+
